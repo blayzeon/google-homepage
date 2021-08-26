@@ -6,22 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Homepage Project</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
 </head>
 <body>
     <div id="container">
         <header>
             <div class="flex justify-between">
                 <span class="align-left">
-                    <a href="#">About</a>
-                    <a href="#">Store</a>
+                    <a href="#" class="header-link">About</a>
+                    <a href="#" class="header-link">Store</a>
                 </span>
                 <span class="align-right">
-                    <a href="#">Gmail</a>
-                    <a href="#">Images</a>
-                    <a href="#" class="no-under">
-                        <img class="icon" src="https://static.thenounproject.com/png/2430250-200.png" alt="app icon">
-                    </a>
-                    <a href="#" class="blue-button no-under">Sign in</a>
+                    <span class="flex">
+                        <a href="#" class="header-link">Gmail</a>
+                        <a href="#" class="header-link">Images</a>
+                        <a href="#" class="no-under">
+                            <i class="material-icons header-link icon transparent">apps</i>
+                        </a>
+                        <a href="#" class="blue-button no-under">Sign in</a>
+                    </span>
                 </span>
             </div>
         </header>
@@ -32,8 +37,8 @@
                 </div>
                 <form action="" class="flex justify-center">
                     <div>
-                        <div class="align-left search-elm margin-bottom"> <!-- search div -->
-                            <img class="static-icon transparent" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/1200px-Magnifying_glass_icon.svg.png" alt="magnifying glass">
+                        <div class="flex padded search-elm margin-bottom"> <!-- search div -->
+                            <i class="material-icons static-icon self-center transparent">search</i>
                             <input class="inline hidden-input" type="text" name="" id=""> <!-- search box -->
                         </div>
                         <div>

@@ -73,8 +73,13 @@ footer a{
     justify-content: space-between;
 }
 
+.header-link{
+    margin-top: 5px;
+}
+
 .logo{
     width: 30%;
+    max-width: 280px;
     height:auto;
     margin-top: 20px;
 }
@@ -82,26 +87,18 @@ footer a{
     cursor: pointer;
 }
 
-.static-icon{
-    width: 15px;
-    height: auto;
+.self-center{
+    align-self: center;
 }
 
-.icon{
-    width: 15px;
-    padding: 5px;
-    height: auto;
-    margin-bottom: -8px;
-}
 .icon:hover{
-    -moz-box-shadow: insert 0 2px 0 rgba(0,0,0,.15);
-    box-shadow: insert 0 2px 0 rgba(0,0,0,.15);
-    background: #e3e3e3;
-    border-radius: 10px;
+    box-shadow: 1px 1px 1px 7px rgba(60, 64, 67, 0.08);
+    background: rgba(60, 64, 67, 0.08);
+    border-radius: 15px;
 }
 
 .transparent{
-    opacity: 0.5;
+    opacity: 0.7;
     margin-bottom: -3px;
     margin-left: 5px;
 }
@@ -138,7 +135,8 @@ a:hover{
 
 .hidden-input{
     border: 0px;
-    width: 90%;
+    width: 85%;
+    padding: 5px;
 }
 
 .hidden-input:focus{
@@ -166,19 +164,23 @@ a:hover{
 }
 
 .blue-button{
+    margin-left: 20px;
     cursor: pointer;
     margin-right: 5px;
-    padding: 6px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 8px;
+    padding-right: 20px;
+    padding-left: 20px;
     border: 0px;
     border-radius: 5px;
-    background-color: rgb(26,144,232,1); 
+    background-color: rgb(43, 125, 233); 
     color: white;  
 }
 
 .blue-button:hover{
-    -moz-box-shadow: insert 0 1px 0 rgba(26,144,232,1);
-    box-shadow: insert 0 1px 0 rgba(26,144,232,1);
-    background: rgb(34, 154, 246);
+    box-shadow: 1px 1px 1px rgb(53, 135, 253);
+    background: rgb(53, 135, 253);
+}
+
+.padded{
+    padding: 5px;
 }
