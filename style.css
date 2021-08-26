@@ -1,7 +1,16 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+}
+
 #container{
+    min-height: 100%;
     display: grid;
+    grid-template-rows: auto 1fr auto;
     grid-template-columns: 100%;
-    grid-template-rows: 100%;
     grid-template-areas:
         "header"
         "content"
@@ -9,6 +18,7 @@
 }
 
 header{
+    padding: 15px;
     grid-area: header;
 }
 
@@ -16,12 +26,34 @@ header a{
     line-height: 20px;
 }
 
+input[type=submit]{
+    cursor: pointer;
+    margin-right: 5px;
+    padding: 5px;
+    padding-right: 12px;
+    padding-left: 12px;
+    border: 0px;
+    background-color: rgb(243, 243, 243);
+}
+
 main{
     grid-area: content;
+    margin-bottom: 20px;
+    min-height: 200px;
 }
 
 footer{
+    padding: 20px;
+    margin-top: 5px;
     grid-area: footer;
+    background-color: #e3e3e3;
+    font-size: small;
+    bottom: 0px;
+    max-height: 100px;
+}
+
+footer a{
+    color: rgb(51, 51, 51);
 }
 
 .flex{
@@ -44,6 +76,10 @@ footer{
 .logo{
     width: 30%;
     height:auto;
+    margin-bottom: -20px;
+}
+.logo:hover{
+    cursor: pointer;
 }
 
 .static-icon{
@@ -60,12 +96,14 @@ footer{
 .icon:hover{
     -moz-box-shadow: insert 0 2px 0 rgba(0,0,0,.15);
     box-shadow: insert 0 2px 0 rgba(0,0,0,.15);
-    background: #dcdcdc;
+    background: #e3e3e3;
     border-radius: 10px;
 }
 
 .transparent{
     opacity: 0.5;
+    margin-bottom: -3px;
+    margin-left: 5px;
 }
 
 .inline{
@@ -84,4 +122,63 @@ a:hover{
 
 .no-under{
     text-decoration: none !important;
+}
+
+.search-elm{
+    border: 1px solid #dcdcdc;
+    border-radius: 20px;
+    padding: 5px;
+    min-width: 300px;
+    width: 50vw;
+}
+
+.search-elm:hover, input[type=submit]:hover{
+    box-shadow: 1px 1px 5px #dcdcdc;
+}
+
+.hidden-input{
+    border: 0px;
+    width: 90%;
+}
+
+.hidden-input:focus{
+    outline: none;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.flex-left{
+    justify-content: start;
+}
+
+.flex-right{
+    justify-content: end;
+}
+
+.footer-center{
+    top: 0px;
+}
+
+.margin-bottom{
+    margin-bottom: 20px;
+}
+
+.blue-button{
+    cursor: pointer;
+    margin-right: 5px;
+    padding: 6px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: rgb(26,144,232,1); 
+    color: white;  
+}
+
+.blue-button:hover{
+    -moz-box-shadow: insert 0 1px 0 rgba(26,144,232,1);
+    box-shadow: insert 0 1px 0 rgba(26,144,232,1);
+    background: rgb(34, 154, 246);
 }
