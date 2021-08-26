@@ -76,7 +76,7 @@ footer a{
 .logo{
     width: 30%;
     height:auto;
-    margin-bottom: -20px;
+    margin-top: 20px;
 }
 .logo:hover{
     cursor: pointer;
